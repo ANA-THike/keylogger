@@ -1,4 +1,3 @@
-Here's a complete `README.md` file based on your provided information:
 
 ```markdown
 # Keylogger with Telegram Bot Integration
