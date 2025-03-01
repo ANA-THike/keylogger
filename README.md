@@ -81,9 +81,3 @@ If you want to compile the script into an executable file for Windows, you can u
 
 The author is not responsible for any misuse of this program.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
-
-You can customize this file further depending on additional details specific to your project. Make sure to emphasize the ethical considerations and the importance of using this software responsibly.
