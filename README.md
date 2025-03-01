@@ -17,14 +17,13 @@ This Python program functions as a keylogger, capturing keystrokes from the syst
 Before using the program, ensure you have the following:
 
 - **Python 3.x**: The programming language for the script.
-- **`pyTelegramBotAPI`**: Library for interacting with the Telegram bot.
 - **`pynput`**: Library for capturing keystrokes.
 - **`pyinstaller`**: Tool to convert the Python script into an executable.
 
 You can install the required libraries using pip:
 
 ```bash
-pip install pyTelegramBotAPI pynput pyinstaller
+pip install pynput pyinstaller
 ```
 
 ## Setup
