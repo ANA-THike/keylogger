@@ -1,0 +1,2 @@
+Create Telegram bot and get the bot api key and go to this website(replace it with your API key)
+  https://api.telegram.org/bot(api_token)/getUpdates
