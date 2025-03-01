@@ -30,7 +30,7 @@ pip install pynput pyinstaller
 
 1. Clone or download the repository containing the script.
 
-2. Open the `config.py` file and set the following variables:
+2. Open the `keylogger.py` file and set the following variables:
 
    - `TELEGRAM_BOT_TOKEN`: Your Telegram bot token from [BotFather](https://core.telegram.org/bots#botfather).
    - `TELEGRAM_CHAT_ID`: Your Telegram chat ID where the keystroke logs will be sent.
