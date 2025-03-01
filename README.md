@@ -24,7 +24,7 @@ You can install the required libraries using pip:
 
 ```bash
 pip install pyTelegramBotAPI pynput pyinstaller
-
+```
 
 Setup Instructions
 1. Create a Telegram Bot
