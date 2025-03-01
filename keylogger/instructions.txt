@@ -1,6 +1,4 @@
+install required python libraries
 
-
-Start a chat with BotFather and type the command /newbot.
-
-https://api.telegram.org/bot(api_token)/getUpdates
-
+Create telegram bot and get IDs
+  https://api.telegram.org/bot(api_token)/getUpdates
