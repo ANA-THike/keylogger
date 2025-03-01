@@ -1,6 +1,4 @@
-Here's the updated `README.md` with the new option for adjusting the interval with `t.sleep()`:
 
-```markdown
 # Keylogger with Telegram Bot Integration
 
 This Python program functions as a keylogger, capturing keystrokes from the system and sending the captured data to your Telegram bot at a set interval (default: every 30 minutes). The program can be compiled into an executable (.exe) and runs in the background.
