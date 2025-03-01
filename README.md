@@ -1,53 +1,60 @@
+Here's the updated `README.md` with the new option for adjusting the interval with `t.sleep()`:
 
+```markdown
 # Keylogger with Telegram Bot Integration
 
 This Python program functions as a keylogger, capturing keystrokes from the system and sending the captured data to your Telegram bot at a set interval (default: every 30 minutes). The program can be compiled into an executable (.exe) and runs in the background.
 
+> **Disclaimer**: This project is for educational purposes only. Unauthorized use of keyloggers is illegal and unethical. Do not use it without explicit consent.
+
 ## Features
 
-- Captures all keystrokes from the system.
-- Sends captured data to a specified Telegram bot at regular intervals (default: 30 minutes).
-- Runs in the background as a silent process.
-- Can be compiled into a standalone executable (.exe) for Windows.
+- Captures keystrokes from the system.
+- Sends captured data to your Telegram bot every 30 minutes (interval adjustable).
+- Runs in the background.
+- Can be compiled into an executable (.exe).
 
-## Installation
+## Requirements
 
-### Prerequisites
+Before using the program, ensure you have the following:
 
-1. Python 3.x
-2. The following Python libraries:
-   - `pynput`
-   - `requests`
-   
-   You can install them using pip:
+- **Python 3.x**: The programming language for the script.
+- **`pyTelegramBotAPI`**: Library for interacting with the Telegram bot.
+- **`pynput`**: Library for capturing keystrokes.
+- **`pyinstaller`**: Tool to convert the Python script into an executable.
 
-   ```bash
-   pip install pynput requests
-   ```
+You can install the required libraries using pip:
 
-3. A Telegram bot token. Create a bot using [BotFather](https://core.telegram.org/bots#botfather) and get the token.
+```bash
+pip install pyTelegramBotAPI pynput pyinstaller
+```
 
-4. Your Telegram chat ID where the logs will be sent. You can get the chat ID by sending a message to your bot and using the [GetUpdates method](https://core.telegram.org/bots/api#getupdates) from the Telegram API to find the chat ID.
+## Setup
 
-### Setup
+1. Clone or download the repository containing the script.
 
-1. Clone the repository or download the script files to your local machine.
+2. Open the `config.py` file and set the following variables:
 
-2. Edit the `config.py` file and set the following variables:
+   - `TELEGRAM_BOT_TOKEN`: Your Telegram bot token from [BotFather](https://core.telegram.org/bots#botfather).
+   - `TELEGRAM_CHAT_ID`: Your Telegram chat ID where the keystroke logs will be sent.
+   - `LOG_INTERVAL`: The interval in seconds for sending captured logs. The default is 1800 seconds (30 minutes).
 
-   - `TELEGRAM_BOT_TOKEN`: Your Telegram bot token.
-   - `TELEGRAM_CHAT_ID`: Your Telegram chat ID.
-
-   Example:
+   Example `config.py`:
 
    ```python
    TELEGRAM_BOT_TOKEN = 'your-bot-token'
    TELEGRAM_CHAT_ID = 'your-chat-id'
+   LOG_INTERVAL = 1800  # Interval in seconds (default: 30 minutes)
    ```
 
-3. You can adjust the interval at which logs are sent by modifying the `INTERVAL` variable (default: 30 minutes).
+3. The program will capture keystrokes for the specified interval, then send the logs to your Telegram bot. The default interval is 30 minutes (`1800` seconds), but you can modify this value by setting `LOG_INTERVAL` to any number of seconds.
 
-### Running the Script
+### Example for 15-minute interval:
+```python
+LOG_INTERVAL = 900  # Capture for 15 minutes
+```
+
+## Running the Script
 
 To run the script, execute the following command:
 
@@ -55,7 +62,7 @@ To run the script, execute the following command:
 python keylogger.py
 ```
 
-Once the script is running, it will capture keystrokes and send the data to your Telegram bot at the specified intervals.
+Once the script is running, it will capture keystrokes and send the data to your Telegram bot at the specified interval.
 
 ### Compiling to .exe (Windows)
 
@@ -80,4 +87,3 @@ If you want to compile the script into an executable file for Windows, you can u
 **Important:** This keylogger is for educational purposes only. Unauthorized use of keyloggers may be illegal and unethical. Ensure that you have proper consent before using or distributing this software.
 
 The author is not responsible for any misuse of this program.
-
