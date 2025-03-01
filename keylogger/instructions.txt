@@ -1,0 +1,6 @@
+
+
+Start a chat with BotFather and type the command /newbot.
+
+https://api.telegram.org/bot(api_token)/getUpdates
+
