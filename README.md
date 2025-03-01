@@ -1,6 +1,4 @@
-Here's a sample `README.md` for your keylogger program:
 
-```markdown
 # Keylogger with Telegram Bot Integration
 
 This Python program functions as a keylogger, capturing keystrokes from the system and sending the captured data to your Telegram bot at a set interval (default: every 30 minutes). The program can be compiled into an executable (.exe) and runs in the background.
