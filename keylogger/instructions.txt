@@ -1,4 +1,4 @@
 install required python libraries
 
-Create telegram bot and get IDs
+Create Telegram bot and get the bot api key and id
   https://api.telegram.org/bot(api_token)/getUpdates
