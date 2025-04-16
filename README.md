@@ -74,7 +74,7 @@ If you want to compile the script into an executable file for Windows, you can u
 2. Compile the script:
 
    ```bash
-   pyinstaller --onefile --noconsole keylogger.py
+   python -m PyInstaller --onefile --noconsole keylogger.py
    ```
 
    This will create a single executable file in the `dist` folder. You can then run this file without needing Python installed.
