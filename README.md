@@ -143,5 +143,3 @@ This software is for **ethical testing and educational purposes only**. Ensure y
 The creator assumes **no liability** for misuse of this tool.
 
 ---
-
-Let me know if you need further updates!
