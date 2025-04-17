@@ -40,7 +40,7 @@ pip install nuitka
 
 ---
 
-## 🤖 Method 1: How to Create a Telegram Bot (For Testing)
+## 🤖 Method 1: How to Create a Telegram Bot 
 
 Follow these steps to create a Telegram bot and get your credentials.
 
