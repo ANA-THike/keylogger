@@ -122,7 +122,7 @@ The script will begin logging and send updates to your Telegram bot at the confi
 
 ---
 
-## 🧙‍♂️ Compile to a Stealth `.exe` (For Testing)
+## 🧙‍♂️ Compile to a Stealth `.exe` 
 
 You can compile the script into a Windows `.exe` file using **Nuitka**.
 
